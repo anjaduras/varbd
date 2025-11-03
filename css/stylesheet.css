@@ -1,65 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Share+Tech+Mono&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Momo+Signature&family=Yarndings+20&display=swap');
 
-html,body {
-  height:100%;
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-size:min(max(1rem,4vw),20px);
+:root {
+  /* Fonts */
+  --font-logo: "Climate Crisis", sans-serif;
+  --font-sub: "Momo Signature", cursive;
+  --font-main: "Merriweather", serif;
+
+  /* Typography */
+  --font-size-base: clamp(1rem, 4vw, 20px);
+  --font-size-logo: clamp(2rem, 8vw, 70px);
+  --line-height: 1.6;
+  --text-align: center;
+
+  /* Colors */
+  --color-header-footer: #de2865;
+  --color-main: #ffe6d4;
+  --color-logo: #ffdbb6;
+  --color-subline: #e68395;
+  --color-text: #7d1236;
+
+  /* Image */
+  --img-size: 350px;
+}
+
+/* ===== Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
-  font-family:'IBM Plex Mono',monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  line-height:1.6;
-  text-align:center;
-  display:flex;
-  flex-direction:column;
-  min-height:100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  text-align: var(--text-align);
+  color: var(--color-text);
+  background: var(--color-main);
 }
 
-main { flex-grow:1; }
+header, footer {
+  background: var(--color-header-footer);
+}
+
+/* ===== Typography ===== */
+h1 {
+  font: var(--font-size-logo) var(--font-logo);
+  color: var(--color-logo);
+}
+
+h2, .subline {
+  font-family: var(--font-sub);
+}
+
+.subline {
+  color: var(--color-subline);
+}
+
+/* ===== Layout ===== */
+main {
+  flex: 1;
+}
 
 .grid {
-  display:grid;
-  grid-template-columns:1fr;
-  gap:1em 2em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em 2em;
 }
 
-@media (min-width:768px) {
-  .grid { grid-template-columns:repeat(auto-fit,minmax(0,1fr)); }
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
 }
 
-input,button,select,textarea {
-  margin:0;
-  font:inherit;
-  line-height:inherit;
+/* ===== Inputs ===== */
+input, button, select, textarea {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  line-height: inherit;
 }
 
+/* ===== Settings & Links ===== */
 .settings {
-  text-align:right;
-  margin:2%;
+  text-align: right;
+  margin: 2%;
+}
+
+.settings a,
+#pagelinks a {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .settings a {
-  text-decoration:none;
-  padding:.3em;
+  color: var(--color-subline);
+  background: #830232;
+  padding: .5em;
 }
 
-.hgroup {
-  text-align:center;
-  padding:1em 0 5em;
+#pagelinks {
+  margin-bottom: 1%;
 }
 
-.pagecontent { padding:10%; }
-
-footer {
-  padding:5%;
-  font-size:90%;
-  text-align:center;
-  width:90%;
-  margin:0 auto;
+#pagelinks a {
+  font-weight: 800;
+  color: var(--color-logo);
+  padding: 1%;
 }
 
-#pagelinks a{
-  padding-left: 2%;
+/* ===== Content ===== */
+.brandcontent {
+  text-align: center;
+  padding: 7%;
+  color: var(--color-logo);
+}
+
+.pagecontent {
+  padding: 10%;
+}
+
+img {
+  width: var(--img-size);
 }
