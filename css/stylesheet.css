@@ -1,36 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Momo+Signature&family=Yarndings+20&display=swap');
 
 :root {
-  /* Fonts */
   --font-logo: "Climate Crisis", sans-serif;
   --font-sub: "Momo Signature", cursive;
   --font-main: "Merriweather", serif;
 
-  /* Typography */
   --font-size-base: clamp(1rem, 4vw, 20px);
   --font-size-logo: clamp(2rem, 8vw, 70px);
   --line-height: 1.6;
   --text-align: center;
 
-  /* Colors */
   --color-header-footer: #de2865;
   --color-main: #ffe6d4;
   --color-logo: #ffdbb6;
   --color-subline: #eaacb7;
   --color-text: #7d1236;
 
-  /* Image */
-  --img-size: 350px;
+  --img-size: 300px;
 }
 
-/* ===== Base ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -46,19 +42,18 @@ body {
   background: var(--color-main);
 }
 
-header, footer {
+header,
+footer {
   background-image: url(../img/header.JPEG);
 }
 
-
-
-/* ===== Typography ===== */
 h1 {
   font: var(--font-size-logo) var(--font-logo);
   color: var(--color-logo);
 }
 
-h2, .subline {
+h2,
+.subline {
   font-family: var(--font-sub);
 }
 
@@ -66,7 +61,6 @@ h2, .subline {
   color: var(--color-subline);
 }
 
-/* ===== Layout ===== */
 main {
   flex: 1;
 }
@@ -83,17 +77,17 @@ main {
   }
 }
 
-/* ===== Inputs ===== */
-input, button, select, textarea {
+input,
+button,
+select,
+textarea {
   font-family: var(--font-main);
   color: var(--color-text);
   line-height: inherit;
 }
 
-/* ===== Settings & Links ===== */
 .settings {
   text-align: right;
-  margin: 2%;
 }
 
 .settings a,
@@ -103,16 +97,13 @@ input, button, select, textarea {
   background: #830232;
   font-weight: 800;
   color: var(--color-logo);
-  padding: 1%;
   border-radius: 7%;
 }
-
 
 #pagelinks {
   margin-bottom: 1%;
 }
 
-/* ===== Content ===== */
 .brandcontent {
   text-align: center;
   padding: 7%;
@@ -127,4 +118,3 @@ img {
   width: var(--img-size);
 }
 
-/* blog design
