@@ -16,7 +16,7 @@
   --color-header-footer: #de2865;
   --color-main: #ffe6d4;
   --color-logo: #ffdbb6;
-  --color-subline: #e68395;
+  --color-subline: #eaacb7;
   --color-text: #7d1236;
 
   /* Image */
@@ -47,8 +47,10 @@ body {
 }
 
 header, footer {
-  background: var(--color-header-footer);
+  background-image: url(../img/header.JPEG);
 }
+
+
 
 /* ===== Typography ===== */
 h1 {
@@ -98,22 +100,16 @@ input, button, select, textarea {
 #pagelinks a {
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.settings a {
-  color: var(--color-subline);
   background: #830232;
-  padding: .5em;
-}
-
-#pagelinks {
-  margin-bottom: 1%;
-}
-
-#pagelinks a {
   font-weight: 800;
   color: var(--color-logo);
   padding: 1%;
+  border-radius: 7%;
+}
+
+
+#pagelinks {
+  margin-bottom: 1%;
 }
 
 /* ===== Content ===== */
@@ -130,3 +126,5 @@ input, button, select, textarea {
 img {
   width: var(--img-size);
 }
+
+/* blog design
