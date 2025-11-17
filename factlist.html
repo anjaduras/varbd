@@ -29,6 +29,34 @@
     details:hover {
       border-color: var(--color-header-footer);
     }
+
+    details summary {
+      position: relative;
+      display: inline-block;
+      padding: 0 2.5em;
+      /* space for side ornaments */
+      cursor: pointer;
+    }
+
+    /* Left ornament */
+    details summary::before {
+      content: "˚ 𝜗𝜚˚⋆｡☆";
+      position: absolute;
+      left: 0;
+      transform: translateX(-100%);
+      /* places it to the left of the text */
+      white-space: nowrap;
+    }
+
+    /* Right ornament (inverted order) */
+    details summary::after {
+      content: "☆｡⋆˚𝜗𝜚 ˚";
+      position: absolute;
+      right: 0;
+      transform: translateX(100%);
+      /* places it to the right of the text */
+      white-space: nowrap;
+    }
   </style>
 </head>
 
