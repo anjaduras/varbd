@@ -118,3 +118,9 @@ img {
   width: var(--img-size);
 }
 
+#randomfact {
+  font-family: var(--font-logo);
+  text-decoration: none;
+  color: var(--color-header-footer);
+  font-size: 130%;
+}
