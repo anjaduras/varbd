@@ -116,7 +116,12 @@ img {
   font-size: 130%;
 }
 
-button{
+#randomfact:hover {
+  color: var(--color-text);
+  transition: ease-in-out 1s;
+}
+
+button {
   background-color: transparent;
   border-color: transparent;
 }
