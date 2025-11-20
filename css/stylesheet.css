@@ -77,15 +77,6 @@ main {
   }
 }
 
-input,
-button,
-select,
-textarea {
-  font-family: var(--font-main);
-  color: var(--color-text);
-  line-height: inherit;
-}
-
 .settings {
   text-align: right;
 }
@@ -123,4 +114,9 @@ img {
   text-decoration: none;
   color: var(--color-header-footer);
   font-size: 130%;
+}
+
+button{
+  background-color: transparent;
+  border-color: transparent;
 }
