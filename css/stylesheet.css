@@ -45,6 +45,7 @@ body {
 header,
 footer {
   background-image: url(../img/header.JPEG);
+  height: 500px;
 }
 
 h1 {
@@ -125,3 +126,4 @@ button {
   background-color: transparent;
   border-color: transparent;
 }
+
