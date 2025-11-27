@@ -139,3 +139,16 @@ button {
   color: var(--color-main);
   transform: translateY(-5px);
 }
+
+/* SEPARATOR DESIGN */
+#separator{
+  height: 40px; /* height of your wave */
+  background-image: url("../img/separator.png");
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  image-rendering: crisp-edges;
+  margin-bottom: 0%;
+  display: block;
+  background-size: contain;
+  width: 100%;
+}
