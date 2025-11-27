@@ -154,9 +154,20 @@ button {
 }
 
 /* SEPARATOR DESIGN */
-#separator{
+.separator-up{
   height: 40px; /* height of your wave */
-  background-image: url("../img/separator.png");
+  background-image: url("../img/separator_up.png");
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  image-rendering: crisp-edges;
+  margin-bottom: 0%;
+  display: block;
+  background-size: contain;
+  width: 100%;
+}
+.separator-down{
+  height: 40px; /* height of your wave */
+  background-image: url("../img/separator_down.png");
   background-repeat: repeat-x;
   background-size: auto 100%;
   image-rendering: crisp-edges;

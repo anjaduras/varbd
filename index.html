@@ -11,13 +11,22 @@
   <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <style>
+  br.responsive {
+    display: inline;
+  }
 
+  @media (min-width: 950px) {
+    br.responsive {
+      display: none;
+    }
+  }
 </style>
 
 <body>
   <header>
     <div class="brandcontent">
-      <h1 class="hoverhop"><span>H</span><span>a</span><span>p</span><span>p</span><span>y</span>
+      <h1 class="hoverhop"><span>H</span><span>a</span><span>p</span><span>p</span><span>y</span><br
+          class="responsive" />
         <span>B</span><span>i</span><span>r</span><span>t</span><span>h</span><span>d</span><span>a</span><span>y</span><span>!</span>
       </h1>
       <p class="subline">a little gift for my favourite person :333</p>
@@ -26,7 +35,7 @@
       <a href="factlist.html">Facts</a>
       <a href="playlist.html">Playlist</a>
     </nav>
-    <div id="separator"></div>
+    <div class="separator-up"></div>
   </header>
   <main class="pagecontent">
     <section class="grid">
@@ -76,9 +85,12 @@
     </section>
   </main>
 
-  <footer class="brandcontent">
-    <p><strong>09.12.2025</strong><br><strong>VARBD</strong> by <strong>Anna Duras</strong>.<br>All Rights
-      Reserved&#174;</p>
+  <footer>
+    <div class="separator-down"></div>
+    <div class="brandcontent">
+      <p><strong>09.12.2025</strong><br><strong>VARBD</strong> by <strong>Anna Duras</strong>.<br>All Rights
+        Reserved&#174;</p>
+    </div>
   </footer>
 </body>
 
