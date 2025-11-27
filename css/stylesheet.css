@@ -82,6 +82,10 @@ main {
   text-align: right;
 }
 
+#pagelinks {
+  margin-bottom: 1%;
+}
+
 .settings a,
 #pagelinks a {
   text-decoration: none;
@@ -90,10 +94,6 @@ main {
   font-weight: 800;
   color: var(--color-logo);
   border-radius: 7%;
-}
-
-#pagelinks {
-  margin-bottom: 1%;
 }
 
 .brandcontent {
@@ -127,3 +127,15 @@ button {
   border-color: transparent;
 }
 
+/* HEADER ANIMATION */
+
+.hoverhop span {
+  display: inline-block;
+  transition: 0.1s ease;
+  cursor: default;
+}
+
+.hoverhop span:hover {
+  color: var(--color-main);
+  transform: translateY(-5px);
+}
