@@ -158,14 +158,14 @@ button {
 
 /* SEPARATOR DESIGN */
 .separator-up{
-  height: 40px; /* height of your wave */
+  height: 40px; 
   background-image: url("../img/separator_up.png");
-  background-repeat: repeat-x;
-  background-size: auto 100%;
-  image-rendering: crisp-edges;
-  margin-bottom: 0%;
-  display: block;
-  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-size: auto 100%; */
+  /* image-rendering: crisp-edges; */
+  /* margin-bottom: 100PX;  */
+  /* display:inline-block; */
+  background-size:cover;
   width: 100%;
 }
 .separator-down{
