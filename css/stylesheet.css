@@ -42,7 +42,8 @@ body {
   background: var(--color-main);
 }
 
-header, footer {
+header,
+footer {
   background-image: url(../img/header.JPEG);
   width: 100%;
   max-width: 100%;
@@ -152,23 +153,24 @@ button {
 }
 
 /* SEPARATOR DESIGN */
-.separator-up{
-  height: 40px; 
+.separator-up {
+  height: 40px;
   background-image: url("../img/separator_up.png");
   background-repeat: repeat-x;
   background-size: auto 100%;
   image-rendering: crisp-edges;
-  background-size:contain;  width: 100%;
+  background-size: contain;
+  width: 100%;
 }
 
 @media (max-width: 500px) {
   .separator-up {
-    background-size:cover;
+    background-size: cover;
   }
 }
 
-.separator-down{
-  height: 40px; 
+.separator-down {
+  height: 40px;
   background-image: url("../img/separator_down.png");
   background-repeat: repeat-x;
   background-size: auto 100%;
