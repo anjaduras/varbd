@@ -53,11 +53,6 @@ header, footer {
   background-repeat: no-repeat;
 }
 
-header * {
-  margin-bottom: 0 !important;
-}
-
-
 h1 {
   font: var(--font-size-logo) var(--font-logo);
   color: var(--color-logo);
@@ -163,7 +158,6 @@ button {
   background-repeat: repeat-x;
   background-size: auto 100%;
   image-rendering: crisp-edges;
-  /* display:inline-block; */
   background-size:contain;  width: 100%;
 }
 
@@ -173,9 +167,8 @@ button {
   }
 }
 
-
 .separator-down{
-  height: 40px; /* height of your wave */
+  height: 40px; 
   background-image: url("../img/separator_down.png");
   background-repeat: repeat-x;
   background-size: auto 100%;
