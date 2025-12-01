@@ -160,14 +160,20 @@ button {
 .separator-up{
   height: 40px; 
   background-image: url("../img/separator_up.png");
-  background-repeat: no-repeat;
-  /* background-size: auto 100%; */
-  /* image-rendering: crisp-edges; */
-  /* margin-bottom: 100PX;  */
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  image-rendering: crisp-edges;
   /* display:inline-block; */
-  background-size:cover;
-  width: 100%;
+  background-size:contain;  width: 100%;
 }
+
+@media (max-width: 500px) {
+  .separator-up {
+    background-size:cover;
+  }
+}
+
+
 .separator-down{
   height: 40px; /* height of your wave */
   background-image: url("../img/separator_down.png");
